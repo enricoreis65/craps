@@ -1,15 +1,17 @@
-
+dinheiro_final=0
 fichas=100
-while fichas<0:
+while fichas>0:
     status=input("voce quer jogar? ")
     if status=="s":
+        print(fichas)
 
-
-
-
-
-
-    elif status=="n":
+    else:
         dinheiro_final=fichas
         fichas-=fichas
 print(dinheiro_final)
+
+
+
+
+
+
