@@ -29,8 +29,19 @@ while fichas>0:
                 elif soma == 2:
                     fichas += valor_da_aposta*2
                 else:
-                    fichas += valor_da_aposta*3         
-
+                    fichas += valor_da_aposta*3 
+                    
+            if tipo_de_aposta == "Any Craps":
+                if soma == 2 or soma == 3 or soma == 12:
+                    fichas += valor_da_aposta*7
+                else:
+                    valor_da_aposta = 0
+                
+            if tipo_de_aposta == "Twelve":
+                if soma == 12:
+                    fichas += valor_da_aposta*30
+                else:
+                    valor_da_aposta = 0
 
 
     else:
