@@ -97,39 +97,39 @@ while fichas>0:
                     print("voce tem {0} fichas".format(fichas))
                     time.sleep(3)  
                         
-                if tipo_de_aposta == "Any Craps":               
-                    d1=randint(1,6)
-                    d2=randint(1,6)
-                    print_dice(d1, d2)
-                    soma = d1+d2
+            if tipo_de_aposta == "Any Craps":               
+                d1=randint(1,6)
+                d2=randint(1,6)
+                print_dice(d1, d2)
+                soma = d1+d2
+                time.sleep(3)  
+                if soma == 2 or soma == 3 or soma == 12:
+                    fichas += valor_da_aposta*7
+                    print("voce ganhou")
+                    print("voce tem {0} fichas".format(fichas))
                     time.sleep(3)  
-                    if soma == 2 or soma == 3 or soma == 12:
-                        fichas += valor_da_aposta*7
-                        print("voce ganhou")
-                        print("voce tem {0} fichas".format(fichas))
-                        time.sleep(3)  
-                    else:
-                        fichas-=valor_da_aposta
-                        print("voce perdeu")
-                        print("voce tem {0} fichas".format(fichas))
-                        time.sleep(3)   
+                else:
+                    fichas-=valor_da_aposta
+                    print("voce perdeu")
+                    print("voce tem {0} fichas".format(fichas))
+                    time.sleep(3)   
                     
-                if tipo_de_aposta == "Twelve":                
-                    d1=randint(1,6)
-                    d2=randint(1,6)
-                    print_dice(d1, d2)
-                    soma = d1+d2
+            if tipo_de_aposta == "Twelve":                
+                d1=randint(1,6)
+                d2=randint(1,6)
+                print_dice(d1, d2)
+                soma = d1+d2
+                time.sleep(3)  
+                if soma == 12:
+                    fichas += valor_da_aposta*30
+                    print("voce ganhou")
+                    print("voce tem {0} fichas".format(fichas))
                     time.sleep(3)  
-                    if soma == 12:
-                        fichas += valor_da_aposta*30
-                        print("voce ganhou")
-                        print("voce tem {0} fichas".format(fichas))
-                        time.sleep(3)  
-                    else:
-                        fichas-=valor_da_aposta
-                        print("voce perdeu")
-                        print("voce tem {0} fichas".format(fichas))
-                        time.sleep(3)    
+                else:
+                    fichas-=valor_da_aposta
+                    print("voce perdeu")
+                    print("voce tem {0} fichas".format(fichas))
+                    time.sleep(3)    
         else:
             print("voce so tem {0} fichas para apostar".format(fichas))
             time.sleep(3)  
