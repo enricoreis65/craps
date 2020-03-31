@@ -38,7 +38,7 @@ while fichas>0:
             valor_da_aposta=int(input("quanto vc quer apostar? "))
             # valor da aposta tem que ser menor do que as fichas disponíveis
             if valor_da_aposta>fichas:
-                print('esta esta muito pobre para fazer essa aposta, va embora com as suas {0}'.format(fichas))
+                print('esta esta muito pobre para fazer essa aposta, ate fiquei ofendido, va embora com as suas {0}'.format(fichas))
                 break
             elif valor_da_aposta<=fichas:
                 # pergunta que aposta o jogador quer fazer
