@@ -228,8 +228,8 @@ while fichas>0:
                 else:
                     tentativa += 1
                     prox_tentativa = input("Não aconteceu nada, (aperte enter p/ a prox tentativa) ")
-                    # espera 3s
-                    time.sleep(3)
+                   
+                    
                 
     # caso o jogador digite que não quer mais jogar
     else:
