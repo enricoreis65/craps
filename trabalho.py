@@ -42,7 +42,7 @@ while fichas>0:
                 break
             elif valor_da_aposta<=fichas:
                 # pergunta que aposta o jogador quer fazer
-                tipo_de_aposta =input("voce quer apostar em: Pass Line Bet , Field , Any Craps ou Twelve?")
+                tipo_de_aposta =input("voce quer apostar em: Pass Line Bet , Field , Any Craps ou Twelve? ")
                 # aposta Pass
         if rodada==("Come Out"):
             if tipo_de_aposta=="Pass":
