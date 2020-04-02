@@ -11,12 +11,12 @@ meio = '|   *   |'
 direita  = '|     * |'
 osdois   = '| *   * |'
 
-dice = [(sem, meio, sem),(esquerda,  sem,  direita),(esquerda,  meio, direita),(osdois,  sem,  osdois ),(osdois,  meio, osdois ),(osdois,  osdois,   osdois )]
+dado = [(sem, meio, sem),(esquerda,  sem,  direita),(esquerda,  meio, direita),(osdois,  sem,  osdois ),(osdois,  meio, osdois ),(osdois,  osdois,   osdois )]
 
 # criando uma função para representar o dado
-def print_dice(a, b):
+def print_dado(a, b):
     print(base)
-    print('\n'.join(a + sep + b for a, b in zip(dice[a-1], dice[b-1])))
+    print('\n'.join(a + sep + b for a, b in zip(dado[a-1], dado[b-1])))
     print(base)
 
 # condições iniciais
@@ -49,7 +49,7 @@ while fichas>0:
                 # sorteia os dados
                 d1=randint(1,6)
                 d2=randint(1,6)
-                print_dice(d1, d2)
+                print_dado(d1, d2)
                 # armazena o valor da soma dos dados
                 soma = d1+d2
                 #espera 3 segundos
@@ -87,7 +87,7 @@ while fichas>0:
                 # sorteia o numero dos dados
                 d1=randint(1,6)
                 d2=randint(1,6)
-                print_dice(d1, d2)
+                print_dado(d1, d2)
                 # armazena a soma do valor dos dados sorteados
                 soma = d1+d2
                 # espera 3s
@@ -135,7 +135,7 @@ while fichas>0:
                 # sorteia o valor dos dados
                 d1=randint(1,6)
                 d2=randint(1,6)
-                print_dice(d1, d2)
+                print_dado(d1, d2)
                 # armazena o valor da soma dos dados
                 soma = d1+d2
                 # espera 3s
@@ -165,7 +165,7 @@ while fichas>0:
                 # sorteia valores dos dados                
                 d1=randint(1,6)
                 d2=randint(1,6)
-                print_dice(d1, d2)
+                print_dado(d1, d2)
                 # armazena o valor da soma dos dados
                 soma = d1+d2
                 # espera 3s
@@ -196,7 +196,7 @@ while fichas>0:
                 # sorteia os dados
                 d1=randint(1,6)
                 d2=randint(1,6)
-                print_dice(d1, d2)
+                print_dado(d1, d2)
                 # armazenando a soma dos dados
                 soma = d1+d2
                 # espera 3s
