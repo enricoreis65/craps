@@ -23,6 +23,10 @@ def print_dado(a, b):
 fichas=100
 rodada=("Come Out")
 
+# bem vindo
+print('Bem vindo ao jogo Craps!')
+
+
 # Imprime a qtd de fichas que o jogador tem para apostar no inicio
 print("voce tem {0} fichas iniciais".format(fichas))
 
